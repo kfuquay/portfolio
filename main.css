@@ -1,0 +1,165 @@
+
+/* HOME PAGE */
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #c2c2c2;
+    margin: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.swatch {
+    height: 350px;
+    width: 250px;
+    border: 1px solid #c2c2c2;
+    box-shadow: 2px 2px 4px #c2c2c2;
+    margin: 30px;
+}
+
+.block {
+    width: 250px;
+    height: 250px;
+}
+
+.words {
+    height: 15vh;
+    padding: 5px;
+}
+
+.bio {
+    background-color: lightcyan;
+}   
+
+.projects {
+    background-color: lightskyblue;
+}
+
+.contact {
+    background-color: lightblue;
+}
+
+.bonus {
+    background-color: lightsteelblue;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 3px 0;
+}
+
+p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.large-swatch {
+    width: 30vw;
+    height:40vw;
+    border: 1px solid #c2c2c2;
+    box-shadow: 2px 2px 4px #c2c2c2;
+    margin: 20px;
+}
+
+.alt-block, 
+.image {
+    height: 30vw;
+    width: 30vw;
+}
+
+.alt-heading {
+    font-size: 16px;
+}
+
+.alt-words {
+    padding: 5px;
+}
+
+
+.text-container {
+    width: 90vw;
+    font-size: 18px;
+    margin: 20px;
+}
+
+
+@media only screen and (min-width: 760px) {
+    header {
+        font-size: 32px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+        padding: 30px;
+    }
+
+    .large-swatch {
+        width: 250px;
+        height: 350px;
+        border: 1px solid #c2c2c2;
+        box-shadow: 2px 2px 4px #c2c2c2;
+    }
+
+    .alt-block {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alt-heading {
+        font-size: 22px;
+    }
+
+    .alt-words {
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .text-container {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 750px;
+        height: 350px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
