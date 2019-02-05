@@ -6,18 +6,20 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 main {
     background-color: white;
 }
 
+/* HOME */
 header {
-    text-align: center;
     font-size: 18px;
     text-shadow: 2px 2px 4px #c2c2c2;
     margin: 3vh;
+    height: 5vh;
+    text-align: center;
 }
 
 a {
@@ -25,7 +27,7 @@ a {
     color: black;
 }
 
-.blocks {
+.home-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,12 +43,12 @@ a {
     margin: 30px;
 }
 
-.block {
+.color-block {
     width: 250px;
     height: 250px;
 }
 
-.words {
+.color-description {
     height: 15vh;
     padding: 5px;
 }
@@ -78,28 +80,44 @@ p {
     font-weight: 300;
 }
 
-.large-swatch {
+/* OUTER PAGES */
+.flex-nav ul {
+    list-style: none;
+    margin: 3vh;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-nav li {
+    flex: 1 1 150px;
+    padding: 5px;
+}
+
+.alt-swatch {
     width: 30vw;
     height:40vw;
     border: 1px solid #c2c2c2;
     box-shadow: 2px 2px 4px #c2c2c2;
-    margin: 20px;
+    margin: 50px 20px;
 }
 
-.alt-block, 
-.image {
+.alt-color-block {
     height: 30vw;
     width: 30vw;
 }
 
 .alt-heading {
     font-size: 16px;
-}
-
-.alt-words {
     padding: 5px;
 }
 
+.lagniappe-image {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px #c2c2c2;
+}
 
 .text-container {
     width: 90vw;
@@ -108,26 +126,48 @@ p {
 }
 
 
+.image {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 20px 0;
+}
+
+a:hover {
+    color: deeppink;
+}
+
 @media only screen and (min-width: 760px) {
     header {
         font-size: 32px;
     }
 
-    .container {
-        display: flex;
-        align-items: center;
-        /* justify-content: space-around; */
-        padding: 30px;
+    .color-description p {
+        font-size: 16px;
+        line-height: 20px;
     }
 
-    .large-swatch {
+    .flex-nav li {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .project-container {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .alt-swatch {
         width: 250px;
         height: 350px;
         border: 1px solid #c2c2c2;
         box-shadow: 2px 2px 4px #c2c2c2;
+        margin-top: 100px;
+        margin-bottom: 20px;
     }
 
-    .alt-block {
+    .alt-color-block {
         height: 250px;
         width: 250px;
         display: flex;
@@ -137,27 +177,51 @@ p {
 
     .alt-heading {
         font-size: 22px;
+        padding: 5px;
     }
 
-    .alt-words {
-        padding: 10px;
-        margin-top: 5px;
-        font-size: 16px;
-        line-height: 20px;
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .text-container {
         font-size: 18px;
         line-height: 30px;
-        max-width: 750px;
         height: 350px;
+        margin-top: 100px;
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
+        max-width: 700px;
+        padding: 20px;
+        justify-content: flex-end;
+    }
+
+    .lagniappe-image {
+        align-self: flex-end;
     }
 
     .image {
-        width: 250px;
-        height: 250px;
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    /* PROJECTS */
+    #project-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .project {
+        flex: 1 1 350px;
+        padding: 20px;
     }
 
 }
