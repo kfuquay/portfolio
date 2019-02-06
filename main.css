@@ -90,8 +90,9 @@ p {
 }
 
 .flex-nav li {
-    flex: 1 1 100px;
+    flex: 1 1 120px;
     padding: 5px;
+    font-size: 18px;
 }
 
 .alt-swatch {
