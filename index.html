@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>Kirsty Fuquay | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
+
 <body>
     <main role="main">
 
@@ -14,52 +17,157 @@
             <h1>HI, I'M KIRSTY</h1>
         </header>
 
-        <section class="home-container">
+        <nav role="navigation" class="flex-nav">
+            <ul>
+                <li>
+                    <a href="#bio">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#projects">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#bonus">LAGNIAPPE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="home-container hidden">
 
             <section class="swatch">
-                <a href="bio.html"><div class="bio color-block"></div>
-                <section class="color-description">
-                    <h2>ABOUT</h2>
-                    <p>#E0FFFF</p>
-                    <p>RGB(224, 255, 255)</p>
-                    <p>LightCyan</p>
-                </section>
+                <a href="#bio">
+                    <div class="bio color-block"></div>
+                    <section class="color-description">
+                        <h2>ABOUT</h2>
+                        <p>#E0FFFF</p>
+                        <p>RGB(224, 255, 255)</p>
+                        <p>LightCyan</p>
+                    </section>
                 </a>
             </section>
 
             <section class="swatch">
-                <a href="projects.html"><div class="projects color-block"></div>
-                <section class="color-description">
-                    <h2>PROJECTS</h2>
-                    <p>#87CEFA</p>
-                    <p>RGB(135, 206, 250)</p>
-                    <p>LightSkyBlue</p>
-                </section>
+                <a href="#projects">
+                    <div class="projects color-block"></div>
+                    <section class="color-description">
+                        <h2>PROJECTS</h2>
+                        <p>#87CEFA</p>
+                        <p>RGB(135, 206, 250)</p>
+                        <p>LightSkyBlue</p>
+                    </section>
                 </a>
             </section>
 
             <section class="swatch">
-                <a href="contact.html"><div class="contact color-block"></div>
-                <section class="color-description">
-                    <h2>CONTACT</h2>
-                    <p>#ADD8E6</p>
-                    <p>RGB(173, 216, 230)</p>
-                    <p>LightBlue</p>
-                </section>
-            </a>
+                <a href="#contact">
+                    <div class="contact color-block"></div>
+                    <section class="color-description">
+                        <h2>CONTACT</h2>
+                        <p>#ADD8E6</p>
+                        <p>RGB(173, 216, 230)</p>
+                        <p>LightBlue</p>
+                    </section>
+                </a>
             </section>
-            
+
             <section class="swatch">
-                <a href="bonus.html"><div class="bonus color-block"></div>
-                <section class="color-description">
-                    <h2>LAGNIAPPE</h2>
-                    <p>#B0C4DE</p>
-                    <p>RGB(176, 196, 222)</p>
-                    <p>LightSteelBlue</p>
-                </section>
+                <a href="#bonus">
+                    <div class="bonus color-block"></div>
+                    <section class="color-description">
+                        <h2>LAGNIAPPE</h2>
+                        <p>#B0C4DE</p>
+                        <p>RGB(176, 196, 222)</p>
+                        <p>LightSteelBlue</p>
+                    </section>
                 </a>
             </section>
         </section>
+
+        <section class="strip" id="bio">
+            <section class="color-strip bio"></section>
+            <h1 class="sub-heading">ABOUT</h1>
+        </section>
+
+        <div class="flex-container">
+            <section class="text-container">
+                <p>Hello, my name is Kirsty. I am a web developer who loves to learn new technologies. I am experienced
+                    with frontend usage of Javascript, jQuery, CSS3, and semantic HTML5. Always learning - I'm
+                    currently getting to know React and SASS.</p><br>
+                <p>I am an avid cyclist and conservationist and enjoy giving back to nature whenever possible. When I'm
+                    not enjoying the great outdoors you can find me at my studio in central Massachusetts playing
+                    around with Arduinos and Raspberry Pis, 3d printing bits and bobs, or creating surrealist collages.</p>
+            </section>
+        </div>
+
+        <section class="strip" id="projects">
+            <section class="color-strip projects"></section>
+            <h1 class="sub-heading">PROJECTS</h1>
+        </section>
+        <section class="project-container">
+            <div class="project">
+                <img src="images/next-match.png" class="project-image" alt="screenshot of 'Get Match Ready' app">
+                <p id="project-text">
+                    PROJECT: Get Match Ready<br>
+                    DESCRIPTION: An app that allows users to see information about EFL Championship football teams<br>
+                    TECH: HTML5 / CSS3 / Javascript / jQuery<br>
+                    <a href="https://kfuquay.github.io/get-match-ready/"><span>LIVE</span></a> |
+                    <a href="https://github.com/kfuquay/get-match-ready"><span>REPO</span></a>
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/BIBEQuiz.jpg" class="project-image" alt="screenshot of a quiz app about Big Bend National Park">
+                <p id="project-text">
+                    PROJECT: Quiz App<br>
+                    DESCRIPTION: A quiz app about Big Bend National Park<br>
+                    TECH: HTML5 / CSS3 / Javascript / jQuery<br>
+                    <a href="https://kfuquay.github.io/BIBEQuiz/"><span>LIVE</span></a> |
+                    <a href="https://github.com/kfuquay/BIBEQuiz"><span>REPO</span></a>
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/composition-c.jpg" class="project-image" alt="screenshot of css grid layout made to resemble Piet Mondrian's 'Composition-C'">
+                <p id="project-text">
+                    PROJECT: Composition CSS Grid<br>
+                    DESCRIPTION: A recreation of Piet Mondrian's 'composition-c' using CSS grid<br>
+                    TECH: HTML5 / CSS3<br>
+                    <a href="https://kfuquay.github.io/composition-css-grid/"><span>LIVE</span></a> |
+                    <a href="https://github.com/kfuquay/composition-css-grid"><span>REPO</span></a>
+                </p>
+            </div>
+        </section>
+
+        <section class="strip" id="contact">
+            <section class="color-strip contact"></section>
+            <h1 class="sub-heading">CONTACT</h1>
+        </section>
+
+        <div class="flex-container">
+            <ul id="contact-text">
+                <li>
+                    <a href="mailto:kirsty.fuquay@gmail.com"> EMAIL</a>
+                </li>
+                <li>
+                    <a href="https://github.com/kfuquay">GITHUB</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kirsty-fuquay-285860173/">LINKEDIN</a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="strip" id="bonus">
+            <section class="color-strip bonus"></section>
+            <h1 class="sub-heading">LAGNIAPPE</h1>
+        </section>
+
+        <div>
+            <img src="images/pen-groton.JPG" alt="A scruffy dog sitting in the grass smiling" class="lagniappe-image">
+        </div>
     </main>
 </body>
+
 </html>
