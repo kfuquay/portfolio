@@ -6,7 +6,7 @@ body {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 a {
@@ -198,74 +198,75 @@ a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-    header {
-        font-size: 60px;
-        padding: 50px;
-    }
+  header {
+    font-size: 60px;
+    padding: 50px;
+  }
 
-    .sub-heading {
-        margin-top: 10px;
-        font-size: 34px;
-        text-align: center;
-    }
+  .sub-heading {
+    margin-top: 10px;
+    font-size: 34px;
+    text-align: center;
+  }
 
-    .flex-nav {
-        display: none;
-    }
+  .flex-nav {
+    display: none;
+  }
 
-    /* COLOR SWATCHES  */
-    .home-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 150px;
-    }
+  /* COLOR SWATCHES  */
+  .home-container {
+    min-height: calc("100vh - 200px");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+  }
 
-    .hidden {
-        display: flex;
-    }
+  .hidden {
+    display: flex;
+  }
 
-    .swatch {
-        height: 350px;
-        width: 250px;
-        border: 1px solid #c2c2c2;
-        box-shadow: 2px 2px 4px #c2c2c2;
-        margin: 30px;
-    }
+  .swatch {
+    height: 350px;
+    width: 250px;
+    border: 1px solid #c2c2c2;
+    box-shadow: 2px 2px 4px #c2c2c2;
+    margin: 30px;
+  }
 
-    .color-block {
-        width: 250px;
-        height: 250px;
-    }
+  .color-block {
+    width: 250px;
+    height: 250px;
+  }
 
-    .color-description {
-        height: 15vh;
-        padding: 5px;
-    }
+  .color-description {
+    height: 15vh;
+    padding: 5px;
+  }
 
-    .color-description p {
-        font-size: 16px;
-        line-height: 20px;
-    }
+  .color-description p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    h2 {
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        margin: 0 0 3px 0;
-    }
+  h2 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 3px 0;
+  }
 
-    .swatch:hover {
-        transform: rotate(1deg);
-    }
+  .swatch:hover {
+    transform: rotate(1deg);
+  }
 
-    /* SECTIONS */
-    .text-container {
-        width: 40vw;
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 100;
-        margin: 50px 20px;
-      }
-      
+  /* SECTIONS */
+  .text-container {
+    width: 40vw;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+    margin: 50px 20px;
+  }
+
 }
