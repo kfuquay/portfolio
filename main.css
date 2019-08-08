@@ -100,13 +100,13 @@ a:hover {
 
 /* PROJECTS */
 .project-image {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 275px;
+  max-height: 275px;
   display: block;
   margin: 20px auto;
 }
 
-#project-text {
+.project-text {
   font-size: 18px;
   line-height: 30px;
 }
@@ -116,15 +116,15 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin: 50px auto;
+  width: 100%;
 }
 
 .project {
-  flex-basis: 1 1 300px;
+  flex: 1 1 300px;
   min-height: 400px;
-  max-width: 400px;
+  width: 100%;
   padding: 20px;
-  border: 1px solid lightskyblue;
-  margin: 10px;
+  border-top: 1px solid lightskyblue;
 }
 
 #project-text span {
@@ -195,12 +195,24 @@ a:hover {
   #contact-text li {
     font-size: 22px;
   }
+
+  /* Project */
+  .project-image {
+    max-height: 450px;
+    max-width: 450px;
+  }
+  .project {
+    flex: 1 1 450px;
+    min-height: 500px;
+    max-width: 500px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   header {
     font-size: 60px;
     padding: 50px;
+    margin: 0px;
   }
 
   .sub-heading {
@@ -217,10 +229,9 @@ a:hover {
   .home-container {
     min-height: calc("100vh - 200px");
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 150px;
   }
 
   .hidden {
@@ -228,31 +239,30 @@ a:hover {
   }
 
   .swatch {
-    height: 350px;
-    width: 250px;
+    height: 200px;
+    width: 140px;
     border: 1px solid #c2c2c2;
     box-shadow: 2px 2px 4px #c2c2c2;
     margin: 30px;
   }
 
   .color-block {
-    width: 250px;
-    height: 250px;
+    width: 140px;
+    height: 140px;
   }
 
   .color-description {
-    height: 15vh;
     padding: 5px;
   }
 
   .color-description p {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   h2 {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
     margin: 0 0 3px 0;
   }
 
@@ -269,4 +279,16 @@ a:hover {
     margin: 50px 20px;
   }
 
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+  }
+
+  .project {
+    padding: 20px;
+    border: 1px solid lightskyblue;
+    margin: 10px;
+  }
 }
